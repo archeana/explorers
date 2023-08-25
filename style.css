@@ -93,11 +93,11 @@ span.size-48 {
 .dropbtn {
     background-color: #1a07c5;
     color: white;
-    padding: 16px;
+    padding: 14px;
     font-size: 20px;
     border: none;
     cursor: pointer;
-    width: auto;
+    width: 100px;
 }
 
 /* Dropdown button on hover & focus */
@@ -136,6 +136,8 @@ span.size-48 {
     text-align: left;
     /* Align the text to the left */
     align-items: left;
+    width: auto; /* Adjust the width as needed */
+    margin-right: auto; /* Push the filter to the left */
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -149,6 +151,8 @@ span.size-48 {
     /* Additional styles to make it inline */
     text-align: left;
     padding: 10px;
+    right: 0; /* Align the dropdown to the right edge */
+    left: auto; /* Reset the left positioning */
 }
 
 /* Links inside the dropdown */
