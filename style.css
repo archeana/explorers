@@ -49,7 +49,7 @@ button {
     border: 1px solid #000;
     background: #fce9d6;
     font-family: Inter;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 600;
     line-height: normal;
     margin-top: 3%;
@@ -74,10 +74,11 @@ button {
 
 .bticon {
     height: 50px;
-    width: 50px;
+    width: 100px;
     background-color: hsl(99, 56%, 87%);
     border-radius: 50%;
     display: inline-block;
+    margin-top: 30px;
 }
 
 span.size-48 {
@@ -93,9 +94,10 @@ span.size-48 {
     background-color: #1a07c5;
     color: white;
     padding: 16px;
-    font-size: 16px;
+    font-size: 20px;
     border: none;
     cursor: pointer;
+    width: auto;
 }
 
 /* Dropdown button on hover & focus */
@@ -110,7 +112,7 @@ span.size-48 {
     background-image: url('searchicon.png');
     background-position: 14px 12px;
     background-repeat: no-repeat;
-    font-size: 16px;
+    font-size: 20px;
     padding: 14px 20px 12px 45px;
     border: none;
     border-bottom: 1px solid #ddd;
@@ -174,15 +176,15 @@ span.size-48 {
     background-color: #1a07c5;
 }
 
-h2 {
+.h2exp {
     color: black;
     font-family: Inter;
     font-size: 50px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     margin-left: 5%;
     margin-bottom: 1%;
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
 /* Flex layout for rows */
