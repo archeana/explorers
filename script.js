@@ -1,16 +1,3 @@
-// // Wait for the DOM to be fully loaded
-// document.addEventListener('DOMContentLoaded', () => {
-//     const notesIcon = document.querySelector('.notes-icon');
-//     const sidebar = document.querySelector('.sidebar');
-//     const notesOverlay = document.querySelector('.notes-overlay');
-
-//     // Add a click event listener to the notes icon
-//     notesIcon.addEventListener('click', () => {
-//         sidebar.style.left = '0'; // Move the sidebar into view
-//         notesOverlay.style.display = 'block'; // Show the notes overlay
-//     });
-// });
-
 
 (function () {
     const heartIcons = document.querySelectorAll('.heart-icon');
@@ -21,14 +8,6 @@
     });
 })();
 
-(function () {
-    const bookmarkIcons = document.querySelectorAll('.bookmark-icon');
-    bookmarkIcons.forEach(bookmark => {
-        bookmark.addEventListener('click', function () {
-            bookmark.classList.toggle('blue'); // Fixed this line
-        });
-    });
-})();
 
 //filter///
 /* When the user clicks on the button,

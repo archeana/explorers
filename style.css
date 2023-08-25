@@ -25,15 +25,15 @@
 
 /* Dashboard explores */
 .dashexpl {
-    height: 10vh;
-    color: #000;
-    gap: 50px;
-    align-items: flex-end;
-    justify-content: center;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
     margin-left: 5%;
     margin-right: 5%;
-    height: 100px;
+    width: 100%;
+    max-width: 1200px; /* Adjust this value based on your design */
+    margin: 0 auto;   /* Center the content horizontally */
 }
 
 button {
@@ -42,18 +42,18 @@ button {
 }
 
 .btnotes,
-.btnfav,
-.btnbok {
-    width: 200px;
-    height: 88px;
+.btnfav  {
+    width: 600px;
+    height: 80px;
     border-radius: 30px;
     border: 1px solid #000;
     background: #fce9d6;
     font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
+    font-size: 25px;
     font-weight: 600;
     line-height: normal;
+    margin-top: 3%;
+    margin-left: 3%;
 }
 
 .btnbok {
