@@ -197,70 +197,105 @@ span.size-48 {
     margin-top: 7%;
 }
 
-/* Flex layout for rows */
+/* Flex layout for rows*/
 .row {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin: 20px 5%;
-    gap: 20px;
 }
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+/* grid-gap: 25px;
 
-/* Each section's width and spacing */
-.webdiv {
-    display: flex;
-    /* Display each card section as a flex container */
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    /* Center the cards horizontally */
-    /* width: 100%; */
-}
-
-
-.peoplediv,
-.eventsdiv {
-    display: flex;
-    /* Display each card section as a flex container */
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    /* Center the cards horizontally */
-    /* width: 100%; */
-}
-
+} */
 
 /* Each card column within a section */
-.column {
-    flex: 1;
-    max-width: 200px;
+/* .column {
+    flex: 1; */
+/* max-width: 200px; remove the max-width from .column to let the cards expand more on larger screens. */
+
+
+/* Each section's width and spacing */
+/* .webdiv {
+    display: flex;
+    /* Display each card section as a flex container 
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;} */
+/* Center the cards horizontally */
+/* width: 100%; */
+
+
+
+
+/* .peoplediv,
+.eventsdiv {
+    display: flex; */
+/* Display each card section as a flex container */
+/* flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;} */
+/* Center the cards horizontally */
+/* width: 100%; */
+
+.last-card-row {
+    margin: 5%;
 }
+
+
 
 
 /* Style the counter cards */
-.cardexp {
+/* .cardexp {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color: #f1f1f1;
-    margin-top: 20px;
-    margin-left: 50px;
+    /* background-color: #f1f1f1; */
+/* margin-top: 20px; 
+     
     justify-content: space-between;
-    width: calc(25% - 20px);
-    max-width: 100%;
-    /* This determines the card's width */
+     width: calc(25% - 20px); 
+    /* max-width: 100%; */
+/* This determines the card's width 
     display: flex;
-    /* Make the card a flex container */
+    /* Make the card a flex container 
+    flex-direction: column;
+ 
+} */
+
+/* main content of junior page */
+
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 5%;
 }
 
+/* Camelia- modified to fit horizontally all 4 cards*/
+/* .webdiv,
+.peoplediv,
+.eventsdiv {
+    width: calc(25% - 30px);
+    margin: 20px 10px 45px;
+    border: 1px solid black;
+    background-color: #D9D9D9;
+    display: inline-block;
+    box-sizing: border-box;
+} */
+
 .card {
+    width: calc(33.33% - 20px);
     margin: 10px;
     position: relative;
-    display: flex;
 }
+
 
 .card-body {
     padding: 20px;
-    flex-grow: 1;
-    /* Allow the card content to stretch to fill the card */
+    background-color: #D9D9D9;
+    /* flex-grow: 1;
+    Allow the card content to stretch to fill the card */
+}
+
+button.btn {
+    margin-top: auto;
 }
 
 .card-caption {
@@ -286,16 +321,23 @@ span.size-48 {
 }
 
 
-/* .card-peo {
-    /* border: 1px solid black; */
-/* background-color: #d9d9d9; */
-/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
-/* background-color: #f1f1f1; */
+.last-card-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.fav-container {
+    position: relative;
+    text-align: right;
+    padding: 20px;
+}
 
 .iconleft {
+    position: relative;
     text-align: right;
-    margin-top: 10px;
-    gap: 20px;
+    padding: 20px;
 }
 
 .btnicon {
@@ -310,21 +352,16 @@ span.size-48 {
     color: red !important;
 }
 
-.blue {
-    color: lightblue !important;
-}
 
 
-.favorite-button,
-.bookmark-button {
+.favorite-button {
     border: none;
     background: none;
     cursor: pointer;
     position: relative;
 }
 
-.favorite-button::before,
-.bookmark-button::before {
+.favorite-button::before {
     content: "";
     display: inline-block;
     width: 48px;
@@ -366,14 +403,6 @@ p {
 }
 
 
-/* @media (max-width: 768px) {
-
-    /* Adjust the width and layout for smaller screens
-    .cardexp {
-        width: calc(50% - 20px);
-        /* Two cards per row 
-    }
-}*/
 
 @media (max-width: 768px) {
 
